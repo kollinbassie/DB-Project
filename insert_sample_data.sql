@@ -1,5 +1,3 @@
--- insert_sample_data.sql
-
 -- Insert Departments
 INSERT INTO Department (dept_id, dept_name) VALUES
 (1, 'Sales'),
