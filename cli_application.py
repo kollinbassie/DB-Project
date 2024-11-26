@@ -1,3 +1,5 @@
+# cli_application.py
+
 import sqlite3
 from datetime import datetime
 
@@ -6,6 +8,7 @@ def create_connection(db_file):
     conn = None
     try:
         conn = sqlite3.connect(db_file)
+        conn.execute("PRAGMA foreign_keys = 1")  # Enable foreign key constraints
         print(f"Connected to SQLite database: {db_file}\n")
     except sqlite3.Error as e:
         print(f"Error connecting to database: {e}")
@@ -264,7 +267,7 @@ def main_menu():
     print("10. Exit")
 
 def main():
-    database = "business.db"
+    database = "supermarket.db"  # Updated database name
     conn = create_connection(database)
     if not conn:
         return
