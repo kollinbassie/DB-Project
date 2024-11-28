@@ -1,3 +1,6 @@
+--Use command: sqlite3 supermarket.db < test.sql
+
+
 --Display total sales per product:
     
 SELECT 
