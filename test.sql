@@ -1,3 +1,8 @@
+-- Command: sqlite3 business.db < test.sql
+
+
+
+
 -- 1. Display Total Sales per Product
 -- This query retrieves each product's total quantity sold.
 SELECT '';
