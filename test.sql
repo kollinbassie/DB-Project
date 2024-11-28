@@ -1,53 +1,64 @@
-.headers on
-.mode column
+--Display total sales per product:
+    
+SELECT 
+        p.product_id,
+        p.product_name,
+        SUM(s.quantity_sold) AS total_quantity_sold
+    FROM
+        Sales s
+    JOIN
+        Product p ON s.product_id = p.product_id
+    GROUP BY
+        p.product_id, p.product_name
+    ORDER BY
+        total_quantity_sold DESC
 
--- Query 1: Show all departments
-SELECT * FROM Department;
-SELECT '' AS "";
 
--- Query 2: Show all inventory
-SELECT * FROM Inventory;
-SELECT '' AS "";
 
--- Query 3: Show all products
-SELECT * FROM Product;
-SELECT '' AS "";
+--Display all employees with their details:
+  
+SELECT 
+        e.employee_id,
+        e.employee_name,
+        e.employee_position,
+        e.employee_salary,
+        d.dept_name
+    FROM
+        Employee e
+    JOIN
+        Department d ON e.employee_dept = d.dept_id
+    ORDER BY
+        e.employee_id
 
--- Query 4: Show all suppliers
-SELECT * FROM Supplier;
-SELECT '' AS "";
 
--- Query 5: Find the highest-paid employee in each department
-SELECT e.employee_name, e.employee_salary, d.dept_name
-FROM Employee e
-JOIN Department d ON e.employee_dept = d.dept_id
-WHERE e.employee_salary = (
-    SELECT MAX(employee_salary)
-    FROM Employee e2
-    WHERE e2.employee_dept = e.employee_dept
-);
-SELECT '' AS "";
 
--- Query 6: List all employees who work in a specific department
-SELECT e.employee_name, e.employee_salary
-FROM Employee e
-JOIN Department d ON e.employee_dept = d.dept_id
-WHERE d.dept_name = 'Department Name';
 
--- Query 7: Retrieve the total number of products and their average price
-SELECT COUNT(*) AS total_products, AVG(product_price) AS average_price
-FROM Product;
-SELECT '' AS "";
+--Update the quantity in stock for a given product:
 
--- Query 8: List the total number of employees in each department
-SELECT d.dept_name, COUNT(e.employee_id) AS total_employees
-FROM Department d
-LEFT JOIN Employee e ON d.dept_id = e.employee_dept
-GROUP BY d.dept_name;
-SELECT '' AS "";
+UPDATE Inventory
+SET quantity_in_stock = 10
+WHERE product_id = 201
 
--- Query 9: Find products that are out of stock
-SELECT product_name
-FROM Product
-WHERE product_quantity = 0;
+
+
+
+
+--Add a new order to the Orders table:
+
+INSERT INTO Orders(order_date, supplier_id, product_id, order_quantity, product_ordered, supplied_by)
+VALUES(2024-11-25, 401, 203, 25, Office Chair, Alice Johnson)
+
+
+
+
+
+--Add a new employee to the Employee table:
+    
+INSERT INTO Employee(employee_name, employee_position, employee_salary, employee_dept)
+VALUES(Mary Jane, Cashier, 20000, Sales)
+
+
+
+
+
 
