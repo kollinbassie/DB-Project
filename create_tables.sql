@@ -1,3 +1,5 @@
+-- create_tables.sql
+
 CREATE TABLE IF NOT EXISTS Department (
     dept_id INTEGER PRIMARY KEY,
     dept_name TEXT NOT NULL
