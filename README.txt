@@ -1,5 +1,5 @@
 HOW TO RUN THE DATABASE:
-
+------------------------
 1. Download all the Github files.
   
 2. In the terminal, go to the directory where the files are and enter command: python setup_database.py
@@ -40,9 +40,8 @@ Enter your choice (1-12):
 4. Select an option by entering its corresponding number.
 
 
-
 TEST QUERIES:
-
+-------------
 1. Display Total Sales per Product
 
 SELECT 
