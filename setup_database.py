@@ -1,3 +1,5 @@
+# setup_database.py
+
 import sqlite3
 import os
 
@@ -18,7 +20,7 @@ def execute_script(conn, script_path):
         print(f"An error occurred while executing {script_path}: {e}")
 
 def main():
-    database = "supermarket.db"  # Updated database name
+    database = "business.db"
 
     # Remove existing database for a fresh setup
     if os.path.exists(database):
@@ -28,7 +30,8 @@ def main():
     # Connect to SQLite database
     try:
         conn = sqlite3.connect(database)
-        conn.execute("PRAGMA foreign_keys = 1")  # Enable foreign key constraints
+        # Enable foreign key constraints
+        conn.execute("PRAGMA foreign_keys = 1")
         print(f"Connected to SQLite database: {database}\n")
     except sqlite3.Error as e:
         print(f"Error connecting to database: {e}")
