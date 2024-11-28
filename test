@@ -1,2 +1,0 @@
-sqlite3 supermarket.db < test.sql
-
