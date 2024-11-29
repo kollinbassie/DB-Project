@@ -18,7 +18,7 @@ Database setup completed successfully.
 3. Then, enter command: python cli_application.py
    to run the CLI application.
 
-**You should see the following user interface**:
+**You should see the following user interfaces**:
 
 === Business Database CLI Application ===
 Please select an option:
