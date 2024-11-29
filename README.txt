@@ -42,7 +42,7 @@ Enter your choice (1-12):
 
 TEST QUERIES:
 -------------
-Enter the following command in the terminal to test the queries below: sqlite3 business.db < test_queries.sql
+Enter the following command in the terminal to execute the test queries below: sqlite3 business.db < test_queries.sql
 
 1. Display Total Sales per Product
 
