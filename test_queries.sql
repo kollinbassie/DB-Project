@@ -1,8 +1,8 @@
--- 1. Display Total Sales per Product
--- This query retrieves each product's total quantity sold.
+-- Separator for readability
 SELECT '';
 
-
+-- 1. Display Total Sales per Product
+-- This query retrieves each product's total quantity sold.
 SELECT 
     p.product_id, 
     p.product_name, 
@@ -19,7 +19,7 @@ ORDER BY
 
 -- Separator for readability
 SELECT '';
-SELECT 'Query 1 Successful! Check the Database to verify.';
+SELECT 'Query 1 Successful!';
 SELECT '';
 
 -- 2. Display All Employees with Their Details
@@ -40,7 +40,7 @@ ORDER BY
 
 -- Separator for readability
 SELECT '';
-SELECT 'Query 2 Successful! Check the Database to verify.';
+SELECT 'Query 2 Successful!';
 SELECT '';
 
 -- 3. Update the Quantity in Stock for a Given Product
@@ -57,7 +57,7 @@ WHERE
 
 -- Separator for readability
 SELECT '';
-SELECT 'Query 3 Successful! Check the Database to verify.';
+SELECT 'Query 3 Successful! Select "7. View Products" on the CLI Application to see the update.';
 SELECT '';
 
 -- 4. Add a New Order to the Orders Table
@@ -78,7 +78,7 @@ VALUES
 
 -- Separator for readability
 SELECT '';
-SELECT 'Query 4 Successful! Check the Database to verify.';
+SELECT 'Query 4 Successful! Select "10. View Orders" on the CLI Application to see the update.';
 SELECT '';
 
 -- 5. Add a New Employee to the Employee Table
@@ -90,7 +90,7 @@ VALUES
     ('John Doe', 'Marketing Manager', 70000, 1);
 
 SELECT '';
-SELECT 'Query 5 Successful! Check the Database to verify.';
+SELECT 'Query 5 Successful! Select "6. View Employees" on the CLI Application to see the update.';
 
 
 
