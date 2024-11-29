@@ -37,7 +37,7 @@ Please select an option:
 Enter your choice (1-12):
 
 
-4. Select an option by entering its corresponding number.
+4. Select an option by entering its corresponding number. You can enter 12 to exit the application. 
 
 
 HOW TO RUN TEST QUERIES:
