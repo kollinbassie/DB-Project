@@ -1,11 +1,15 @@
 HOW TO RUN THE DATABASE:
 ------------------------
 1. Download all the Github files.
-  
-2. In the terminal, go to the directory where the files are and enter command: python setup_database.py
-   to setup the database.
 
-**You should see the following message**:  
+** MAKE SURE YOU HAVE PYTHON 3 INSTALLED **
+** SQLite 3 is on MacOS by default but if you're using Windows, you need to install it. **
+
+
+2. In the terminal, go to the directory where the files are and enter command: python3 setup_database.py
+   to setup the database. For Windows: python setup_database.py
+
+** You should see the following message **:  
 
 Connected to SQLite database: business.db
 
@@ -15,10 +19,10 @@ Executed insert_sample_data.sql successfully.
 Database setup completed successfully.
 
 
-3. Then, enter command: python cli_application.py
-   to run the CLI application.
+3. Then, enter command: python3 cli_application.py
+   to run the CLI application. For Windows: python cli_application.py
 
-**You should see the following user interface**:
+** You should see the following user interface **:
 
 === Business Database CLI Application ===
 Please select an option:
@@ -43,6 +47,7 @@ Enter your choice (1-12):
 HOW TO RUN TEST QUERIES:
 ------------------------
 Enter the following command to execute the test queries below: sqlite3 business.db < test_queries.sql
+(Same command for Windows)
 
 1. Display Total Sales per Product
 
