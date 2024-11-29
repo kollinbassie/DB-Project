@@ -40,8 +40,8 @@ Enter your choice (1-12):
 4. Select an option by entering its corresponding number.
 
 
-TEST QUERIES:
--------------
+HOW TO RUN TEST QUERIES:
+------------------------
 Enter the following command to execute the test queries below: sqlite3 business.db < test_queries.sql
 
 1. Display Total Sales per Product
