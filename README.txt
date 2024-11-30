@@ -1,3 +1,5 @@
+Project by: Malhar Pandya, Kollin Bassie, Cory Winfrey, Darrius Anthony, Hunter Todd, Landon Walls
+
 HOW TO RUN THE DATABASE:
 ------------------------
 1. Download all the Github files.
